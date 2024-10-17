@@ -1,0 +1,285 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.left{
+    background-color: #040b14;
+    height: 100vh;
+    width: 20vw;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    animation: slideright 2s ease forwards;
+}
+.navbar{
+    margin: 10px 20px;
+    /* background-color: wheat; */
+}
+.porfolio img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    object-fit: cover;
+    
+}
+.porfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.porfolio h3{
+    font-size: 22px;
+    font-weight: 800;
+    margin: 20px 0;
+}
+.media-links{
+    /* background-color: rgb(244, 115, 115); */
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.media-links i{
+    font-size: 25px;  
+    border-radius: 50%;
+    color: white;
+}
+.media-links i:hover{
+   background-color: rgb(70, 117, 226);
+}
+
+
+.navbootam li{
+    list-style: none;
+    margin: 30px 30px;
+    font-size: 20px;
+    color: #a3a7ab;
+    /* background-color: red; */
+    
+}
+.navbootam li i{
+    margin: 1px 15px;
+    color: #a3a7ab;
+    /* background-color: rgb(93, 12, 12); */
+    
+}
+
+.navbootam li:hover{
+    color: white;
+    cursor: pointer;
+    font-weight: 400;
+}
+.navbootam li:hover i{
+    color: rgb(255, 255, 255);
+    
+    
+}
+
+   
+.Container{
+    display: flex;
+}
+
+.home_right {
+    position: relative; 
+    height: 100vh;
+    width: 80vw;
+}
+
+.home_right img {
+    object-fit: cover;
+    height: 100vh;
+    width: 80vw;
+}
+
+.bg-black {
+    position: absolute; /* Position the black layer absolutely over the image */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black layer */
+    z-index: 1; /* Ensure the overlay is on top of the image */
+}
+.nameall {
+    z-index: 10;
+    position: absolute;
+    top: 250px;
+    left: 40px;
+    width: 300px;
+    color: rgb(230, 222, 206);
+}
+.nameall h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    opacity: 0;
+    animation: slidebottam 1s ease forwards;
+    animation-delay: 0.5s;
+
+}
+.nameall p{
+    
+    opacity: 0;
+    animation: slideleft 1s ease forwards;
+    animation-delay: 0.5s;
+
+}
+
+.nameall h2 span{
+    color: rgb(255, 255, 255);
+    font-size: 73px;
+}
+.aboutus{
+    color: black;
+    height: 80vh;
+    width: 80vw;
+    margin: 15px 5px;
+    /* border: 1px solid red; */
+}
+ .aaa{
+    border-bottom: 3px solid rgb(20, 153, 221);
+    width: 3%;
+    color: black;
+    font-size: 45px;
+    margin: 20px 2px;
+}
+.aboutus p{
+    color: black;
+    margin: 20px 2px;
+    
+}
+.imgabout{
+    display: flex;
+    
+}
+.imgright li{
+   list-style: none;
+   font-size: 20px;
+   cursor: pointer;
+display: block;
+margin: 20px 30px;
+
+}
+.imgright li i{
+    font-size: 15px;
+    color:  rgb(20, 153, 221);
+    margin: 0 5px;
+}
+.imgright li span{
+    margin:0 5px;
+    color: #040b14;
+}
+.imgleft img{
+   height: 400px;
+   width: 350px;
+   object-fit: cover;
+   margin: 10px 20px;
+}
+.imgright h2{
+    color: black;
+}
+.lela{
+    display: flex;
+    margin: 40px;
+}
+
+
+.skills-section {
+    background-color: #f0f1f2;  
+    margin-bottom: 60px;
+    height: 70vh;
+}
+
+.skills-section h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.skills-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.skill-column {
+    width: 45%;
+}
+
+.skill-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.skill-bar span {
+    width: 100px;
+    font-weight: bold;
+}
+
+.bar {
+    flex: 1;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #3498db;
+    border-radius: 10px;
+}
+
+.percent {
+    font-weight: bold;
+}
+
+
+
+@keyframes slideright {
+    0%{
+        transform:  translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform:  translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slidebottam{
+
+    0%{
+        transform:  translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform:  translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideleft{
+
+    0%{
+        transform:  translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform:  translateX(0);
+        opacity: 1;
+    }
+}
