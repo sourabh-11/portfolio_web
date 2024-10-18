@@ -142,6 +142,9 @@
     width: 80vw;
     margin: 15px 5px;
     /* border: 1px solid red; */
+     
+    animation: aboutuss 1s ease forwards;
+    animation-delay: 1s;
 }
  .aaa{
     border-bottom: 3px solid rgb(20, 153, 221);
@@ -264,7 +267,7 @@ margin: 20px 30px;
 @keyframes slidebottam{
 
     0%{
-        transform:  translateY(-100px);
+        transform:  translateY(100px);
         opacity: 0;
     }
     100%{
@@ -275,11 +278,62 @@ margin: 20px 30px;
 @keyframes slideleft{
 
     0%{
-        transform:  translateX(-100px);
+        transform:  translateY(100px);
         opacity: 0;
     }
     100%{
-        transform:  translateX(0);
+        transform:  translateY(0);
         opacity: 1;
     }
 }
+
+@keyframes aboutuss{
+
+    0%{
+        transform:  translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform:  translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .left{
+        display: none;
+    }
+    .right{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .home_right{
+        width: 100vw;
+    }
+    .home_right img{
+        width: 100vw;
+    }
+    .aboutus{
+        width: 100vw;
+    }
+    .imgabout{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgabout .imgleft  img{
+        width: 100vw;
+    }
+    .lela{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    
+
+  }
