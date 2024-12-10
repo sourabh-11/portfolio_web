@@ -198,6 +198,8 @@ margin: 20px 30px;
     background-color: #f0f1f2;  
     margin-bottom: 60px;
     height: 70vh;
+    margin: 20px;
+    border-radius: 10px;
 }
 
 .skills-section h2 {
@@ -336,4 +338,11 @@ margin: 20px 30px;
     }
     
 
+  }
+
+
+
+  .project
+  {
+    margin: 10px;
   }
